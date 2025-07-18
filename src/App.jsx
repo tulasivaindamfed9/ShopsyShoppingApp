@@ -13,11 +13,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/apiProducts" element={<ApiProducts />} />
           {/* <Route path="/contextApi" element={<ContextApi />} /> */}
-           <Route path="/loginRedux" element={<LoginRedux />} />
+           <Route path="/" element={<LoginRedux />} />
         </Routes>
       </BrowserRouter>
     </>
