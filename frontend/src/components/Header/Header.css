@@ -1,0 +1,155 @@
+/* Header.css */
+
+/* AppBar custom style */
+.header-appbar {
+  background-color: #df4419;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  
+}
+
+/* Toolbar styling */
+.header-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+  padding: 0 24px;
+}
+
+/* Styled variant for toolbar */
+.header-toolbar-styled {
+  background: transparent;
+}
+
+/* Left section (logo + title) */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-left-styled {
+  gap: 16px;
+}
+
+/* Logo */
+.header-logo {
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+.header-logo-styled {
+  border: 2px solid #1976d2;
+}
+
+/* Title */
+.header-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.header-title-styled {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Buttons section */
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-buttons-styled {
+  gap: 16px;
+}
+
+/* General header button style */
+.header-btn {
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 6px 16px;
+  font-size: 15px;
+  transition: all 0.2s;
+  border: none;
+  outline: none;
+}
+
+/* Login button */
+.header-login-btn {
+  background: #fff;
+  color: #1976d2;
+  border: 1px solid #1976d2;
+  
+}
+.header-login-btn:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+/* Logout button */
+.header-logout-btn {
+  background: #fff;
+  color: #d32f2f;
+  border: 1px solid #d32f2f;
+}
+.header-logout-btn:hover {
+  background: #d32f2f;
+  color: #fff;
+}
+
+/* Cart button */
+.header-cart-btn,
+.cart-btn {
+  background: #fff;
+  color: #1976d2;
+  border: 1px solid #1976d2;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.header-cart-btn:hover,
+.cart-btn:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+/* Test button */
+.header-test-btn,
+.test-btn {
+  background: #fff;
+  color: #388e3c;
+  border: 1px solid #388e3c;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.header-test-btn:hover,
+.test-btn:hover {
+  background: #388e3c;
+  color: #fff;
+}
+
+/* Margin below header to push content */
+.header-margin-bottom {
+  margin-bottom: 72px;
+}
+
+/* Message box */
+.message-box {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #e0f7fa;
+  color: #006064;
+  border-radius: 4px;
+  font-size: 14px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
