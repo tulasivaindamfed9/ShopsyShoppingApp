@@ -9,7 +9,10 @@ const bodyParser=require('body-parser')
 const app=express()
 
 const cors = require('cors');
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173', // Allow local frontend during dev
+  
+}));
 
 
 // to remove markdown from the response text like *bold*, _italic_, etc.,
