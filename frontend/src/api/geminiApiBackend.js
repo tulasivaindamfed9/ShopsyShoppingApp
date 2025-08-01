@@ -9,7 +9,9 @@ export const geminiApiBackend = async (userInput) => {
     const response = await axios.post(`${API}/api/content`, {
       userInput,
     });
+    console.log(response.data);
     return response.data.reply;
+   
   } catch (error) {
     console.error('Chatbot backend error:', error);
     return 'Oops! Failed to fetch reply.';
