@@ -1,9 +1,11 @@
 // src/api/geminiApiBackend.js
 import axios from 'axios';
+// backend API URL from .env file
+const API = import.meta.env.VITE_API_URL;
 
 export const geminiApiBackend = async (userInput) => {
   try {
-    const response = await axios.post('http://localhost:8000/api/content', {
+    const response = await axios.post(`${API}/api/content`, {
       userInput,
     });
     return response.data.reply;
