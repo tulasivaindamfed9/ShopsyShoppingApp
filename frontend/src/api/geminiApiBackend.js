@@ -5,7 +5,7 @@ const API = import.meta.env.VITE_API_URL;
 
 export const geminiApiBackend = async (userInput) => {
   try {
-    const response = await axios.post(`${API}/api/content`, {
+    const response = await axios.post(`${API}`, {
       userInput,
     });
     return response.data.reply;
