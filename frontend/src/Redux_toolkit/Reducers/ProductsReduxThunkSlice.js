@@ -26,7 +26,7 @@ export const ProductsReduxThunk = createSlice({
         state.isLoading=true
     }),
     builder.addCase(getProducts.fulfilled, (state,action)=>{
-        state.beautyProducts=action.payload,
+        state.beautyProducts=action.payload.products,
         state.isLoading=false
 
     })

@@ -11,7 +11,7 @@ function ProductsReduxThunk() {
 
 
   const products = useSelector(
-    (globalState) => globalState.beauty.beautyProducts.products
+    (globalState) => globalState.beauty.beautyProducts
   );
   console.log(products)
   const user = useSelector((state) => state.login.userName);
