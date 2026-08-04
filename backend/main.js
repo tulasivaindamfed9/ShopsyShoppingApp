@@ -10,7 +10,7 @@ const app=express()
 
 const cors = require('cors');
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://shopsyshoppingapp-frontend.netlify.app/'] // Allow local frontend during dev
+  origin: ['http://localhost:5173', 'https://shopsyshoppingapp-frontend.netlify.app'] // Allow local frontend during dev
 
   
 }));
@@ -56,9 +56,12 @@ app.post('/api/content',async(req,res)=>{
     res.send({
         "reply":plainText
     })
-    }catch(err){
-        res.send("error: ",err)
-    }
+    }catch (err) {
+  console.error(err);
+  res.status(500).json({
+    error: err.message
+  });
+}
     
 })
 
