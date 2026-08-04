@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { testLoginDetails } from "../../Redux_toolkit/Reducers/LoginFormSlice";
 import { useNavigate } from "react-router-dom";
+
 function LoginRedux({onLoginSuccess}) {
 
   //   creating state for user login details as obj
@@ -18,7 +19,7 @@ const navigate=useNavigate()
       ...userDetails,
       [name]: value,
     });
-    console.log(userDetails);
+    // console.log(userDetails);
   }
 
   function handleLogin(e) {

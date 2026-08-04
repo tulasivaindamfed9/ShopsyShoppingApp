@@ -10,7 +10,8 @@ const app=express()
 
 const cors = require('cors');
 app.use(cors({
-  origin: 'http://localhost:5173', // Allow local frontend during dev
+  origin: ['http://localhost:5173', 'https://shopsyshoppingapp-frontend.netlify.app/'] // Allow local frontend during dev
+
   
 }));
 
